@@ -1,0 +1,22 @@
+# Sensitive credentials and secrets (DO NOT COMMIT)
+native-host/config.env
+.env
+*.env
+
+# Local machine specific native host manifest
+native-host/com.iitkgp.erp_auto_login.json
+
+# Logs and runtime traces
+*.log
+native-host/host_debug.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# OS specific files
+.DS_Store
+Thumbs.db

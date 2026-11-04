@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IIT KGP ERP Auto-Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="title-row">
+        <span class="icon">🏛️</span>
+        <h1>ERP Auto-Login</h1>
+      </div>
+      <span class="badge">Zero-Click</span>
+    </div>
+
+    <div class="card status-card">
+      <div class="status-row">
+        <span class="label">Native Helper:</span>
+        <span id="helper-status" class="status-pill status-checking">Checking...</span>
+      </div>
+      <div class="status-row" id="user-row" style="display: none;">
+        <span class="label">Roll Number:</span>
+        <span id="configured-user" class="val-text"></span>
+      </div>
+    </div>
+
+    <div class="card settings-card">
+      <div class="toggle-row">
+        <span class="label">Auto-Login on Page Load</span>
+        <label class="switch">
+          <input type="checkbox" id="auto-login-toggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="btn-test-imap" class="btn btn-secondary">
+        <span>🔄</span> Test IMAP & Watermark
+      </button>
+      <button id="btn-open-erp" class="btn btn-primary">
+        <span>🚀</span> Open ERP Login Page
+      </button>
+    </div>
+
+    <div id="test-result" class="test-result" style="display: none;"></div>
+
+    <div class="footer">
+      <p>Credentials & answers are managed in:</p>
+      <code>native-host/config.env</code>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
